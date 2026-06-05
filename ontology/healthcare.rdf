@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:hc="http://healthcare.semantic/ontology/"
+         xml:base="http://healthcare.semantic/ontology/">
+
+    <!-- ============================================ -->
+    <!-- ONTOLOGY CLASSES (RDFS) -->
+    <!-- ============================================ -->
+
+    <!-- Person Class -->
+    <rdf:Description rdf:about="hc:Person">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Person</rdfs:label>
+        <rdfs:comment>A person in the healthcare system</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Patient Class -->
+    <rdf:Description rdf:about="hc:Patient">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="hc:Person"/>
+        <rdfs:label>Patient</rdfs:label>
+        <rdfs:comment>A patient receiving medical care</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Doctor Class -->
+    <rdf:Description rdf:about="hc:Doctor">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:subClassOf rdf:resource="hc:Person"/>
+        <rdfs:label>Doctor</rdfs:label>
+        <rdfs:comment>A medical doctor or healthcare professional</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Disease Class -->
+    <rdf:Description rdf:about="hc:Disease">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Disease</rdfs:label>
+        <rdfs:comment>A medical disease or condition</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Medication Class -->
+    <rdf:Description rdf:about="hc:Medication">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Medication</rdfs:label>
+        <rdfs:comment>A pharmaceutical medication or drug</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Symptom Class -->
+    <rdf:Description rdf:about="hc:Symptom">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Symptom</rdfs:label>
+        <rdfs:comment>A symptom of a disease</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Diagnosis Class -->
+    <rdf:Description rdf:about="hc:Diagnosis">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Diagnosis</rdfs:label>
+        <rdfs:comment>A medical diagnosis linking patient to disease</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Prescription Class -->
+    <rdf:Description rdf:about="hc:Prescription">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Prescription</rdfs:label>
+        <rdfs:comment>A prescription of medication for a patient</rdfs:comment>
+    </rdf:Description>
+
+</rdf:RDF>
